@@ -10,12 +10,6 @@ function Header() {
 
     const { gf,filter, setFilter, favorites} = GifState();
 
-    // const fetchGifCategories = async () => {
-    //     const res = await fetch("/categories.json");
-    //     const {data} = await res.json();
-    //     setCategories(data);
-    //   };
-    console.log(gf)
       const fetchGifCategories = async () => {
         const {data} = await gf.categories();
         setCategories(data);
